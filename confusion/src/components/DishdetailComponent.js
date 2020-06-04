@@ -95,7 +95,7 @@ class DishDetail extends Component {
 
 
     render() {
-        const dish = this.props.electedDish
+        const dish = this.props.dish
         if (dish == null) {
             return (<div></div>)
         }
@@ -105,7 +105,7 @@ class DishDetail extends Component {
             <div className="container">
                 <div className="row">
                   <div  className="col-12 col-md-5 m-1">
-                    {this.renderDish(this.props.electedDish)}
+                    {this.renderDish(dish)}
                   </div>
                   
                     {commentItem}
